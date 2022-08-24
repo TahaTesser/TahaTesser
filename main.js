@@ -1,15 +1,18 @@
-import blog, { ga, redirects } from "https://deno.land/x/blog@0.3.3/blog.tsx";
+import blog, { ga, redirects  } from "https://deno.land/x/blog@0.3.3/blog.tsx";
 
 blog({
-  title: "Ryan Dahl",
-  author: "Ryan Dahl",
-  avatar: "./ry.jpg",
+  title: "Taha Tesser",
+  author: "Taha Tesser",
+  avatar: "./assets/meta/taha.jpg",
+
   avatarClass: "full",
   links: [
-    { title: "Email", url: "mailto:ry@tinyclouds.org" },
-    { title: "GitHub", url: "https://github.com/ry" },
+    { title: "Twitter",  url: "https://twitter.com/TahaTesser" },
+    { title: "GitHub", url: "https://github.com/TahaTesser" },
+    { title: "LinkedIn", url: "https://www.linkedin.com/in/tahatesser/" },
+    { title: "Email", url: "mailto:tessertaha@gmail.com" },
   ],
-  background: "#fff",
+  background: "#e6f7ff",
   middlewares: [
     ga("UA-91675022-1"),
     redirects({
@@ -17,4 +20,6 @@ blog({
       "rant.html": "rant",
     }),
   ],
+  favicon: "./assets/meta/favicon.ico",
 });
+
