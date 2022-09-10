@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, { ga, redirects, h } from "blog";
+import blog from "blog";
 
 blog({
   title: "Taha Tesser",
