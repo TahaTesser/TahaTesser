@@ -1,0 +1,37 @@
+name: Generate Flutter Website Commits Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  generate-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Commit Badge
+        uses: FMorschel/commit-count-badge@v1
+        with:
+          repository: "flutter/website"
+          author: "TahaTesser"
+          text: "Flutter Website Commits"
+          logo: "flutter"
+          labelColor: "#00A9E0"
+          color: "lightgray"
+          outputPath: "badges/flutter-website-commits.svg"
+          token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Commit and Push Badge
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add "badges/flutter-website-commits.svg"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update commit flutter website badge"
+          git push
