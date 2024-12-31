@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/flutter/flutter/commits?author=TahaTesser">
-    <img src="./badges/flutter-commits.svg" alt="Flutter SDK Commits" style="max-width:100%;">
+    <img src="./badges/flutter-fluttter-commits.svg" alt="Flutter SDK Commits" style="max-width:100%;">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/flutter/website/commits?author=TahaTesser">
