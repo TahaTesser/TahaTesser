@@ -35,6 +35,16 @@
 
 ---
 
+## GitHub Stats
+
+![Taha Tesser's GitHub stats](https://github-readme-stats.vercel.app/api?username=TahaTesser&show_icons=true&theme=radical)
+
+## Top Languages
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TahaTesser&layout=compact&theme=radical)
+
+---
+
 ## You can find me on
 
 <div align="center">
