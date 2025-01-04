@@ -19,8 +19,8 @@ jobs:
           author: "TahaTesser"
           text: "Wolt Modal Sheet Commits"
           logo: "wolt"
-          labelColor: "#00A9E0"
-          color: "lightgray"
+          labelColor: "#027DFD"
+          color: "darkgray"
           outputPath: "badges/wolt-modal-sheet-commits.svg"
           token: "${{ secrets.GITHUB_TOKEN }}"
 
