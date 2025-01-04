@@ -19,8 +19,8 @@ jobs:
           author: "TahaTesser"
           text: "Flutter Website Commits"
           logo: "flutter"
-          labelColor: "#00A9E0"
-          color: "lightgray"
+          labelColor: "#027DFD"
+          color: "#5e5e5e"
           outputPath: "badges/flutter-website-commits.svg"
           token: "${{ secrets.GITHUB_TOKEN }}"
 
